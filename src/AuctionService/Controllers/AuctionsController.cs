@@ -83,6 +83,7 @@ public class AuctionsController : ControllerBase
         
         //TODO : check seller == username
         
+        
         _context.Remove(auction);
         var result = await _context.SaveChangesAsync() > 0;
         if (result) return Ok();
